@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DDCET Preparation — Case Study &bull; Nirvish Patel</title>
+  <meta name="description" content="Case study of DDCET Preparation. An offline-first study system and question bank engine for polytechnic diploma students preparing for Gujarat DDCET entrance examination.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('nirvish_theme_preference');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-title">
+        <span class="brand-dot"></span>
+        <span>Nirvish Patel</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/work/" class="nav-link active">Work</a>
+        <a href="/experience/" class="nav-link">Experience</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+          <span class="theme-text">Dark</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰ Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/work/" class="mobile-nav-link active">Work</a>
+    <a href="/experience/" class="mobile-nav-link">Experience</a>
+    <a href="/about/" class="mobile-nav-link">About</a>
+    <a href="/contact/" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- Case Study Hero -->
+    <article class="case-study-hero">
+      <div class="container">
+        <a href="/work/" class="case-breadcrumb">&larr; Back to all work</a>
+        <div style="margin-bottom: 0.75rem;">
+          <span class="badge badge-independent">Independent System &bull; Educational Engineering</span>
+        </div>
+        <h1 class="case-hero-heading">DDCET Preparation</h1>
+        <p class="case-hero-lead">
+          An offline-first mastery engine and question bank for polytechnic diploma students preparing for Gujarat's DDCET examination.
+        </p>
+
+        <!-- Case Metadata Grid -->
+        <div class="case-meta-grid">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Domain</span>
+            <span class="case-meta-val">Diploma to Degree Entrance</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Architecture</span>
+            <span class="case-meta-val">100% Offline-First &bull; Private</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Backend</span>
+            <span class="case-meta-val">FastAPI &bull; SQLite (WAL)</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Math Rendering</span>
+            <span class="case-meta-val">Bundled KaTeX (Zero CDN)</span>
+          </div>
+        </div>
+
+        <div class="case-actions-bar">
+          <a href="https://github.com/Nirvishpatel47/DDCET-preparation" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            View on GitHub &rarr;
+          </a>
+          <a href="/work/" class="btn btn-secondary">
+            Back to All Projects
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <div class="container">
+
+      <!-- Visual Display Banner -->
+      <div class="case-visual-banner">
+        <div class="mockup-window">
+          <div class="mockup-header">
+            <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+            <span class="mockup-title">DDCET Preparation Engine &bull; Core Specs</span>
+          </div>
+          <div class="mockup-body" style="font-size: 0.88rem; line-height: 1.7;">
+            <div><strong>DAILY 60-MINUTE MASTERY SPLIT:</strong></div>
+            <div style="margin: 0.5rem 0 1rem 1rem;">
+              &bull; <strong>5 Mins:</strong> Due spaced repetition flash review<br>
+              &bull; <strong>35 Mins:</strong> Adaptive prioritized MCQ practice on high-yield syllabus areas<br>
+              &bull; <strong>15 Mins:</strong> Mistake categorization (Concept &bull; Formula &bull; Calculation error)<br>
+              &bull; <strong>5 Mins:</strong> Progress, accuracy &amp; velocity review
+            </div>
+            <div><strong>OFFICIAL GUJARAT DDCET EXAM SIMULATION:</strong></div>
+            <div style="margin: 0.5rem 0 0 1rem;">
+              100 Questions &bull; 90 Minutes &bull; +1.0 Mark Correct &bull; -0.25 Negative Penalty &bull; Hidden Answers Until Submit
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Narrative Sections -->
+      <div class="case-prose-section">
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">The Problem &amp; Context</h2>
+          <p>
+            In Gujarat, engineering diploma students preparing for the competitive DDCET (Diploma to Degree Common Entrance Test) face a challenging syllabus in mathematics, science, and engineering fundamentals. Existing entrance test portals require expensive subscriptions, constant internet connectivity, and push users toward answering high volumes of low-quality questions rather than targeting concept mastery.
+          </p>
+          <p>
+            I built this application as a private, 100% offline-first preparation engine designed to run entirely on the student's personal computer with zero recurring API costs, zero tracking, and zero cloud lock-in.
+          </p>
+        </section>
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">What I Built</h2>
+          <p>
+            The software combines an ergonomic desktop web interface with a robust local database and automated assessment routines:
+          </p>
+          <ul>
+            <li><strong>Adaptive Topic Priority Algorithm:</strong> Evaluates past mistakes, syllabus weighting, spaced repetition urgency, and speed to suggest the most impactful topics for today's practice session.</li>
+            <li><strong>Official DDCET Exam Simulation:</strong> Exact pattern matching Gujarat state entrance guidelines with 100 questions, 90-minute countdown, answer paletting, and negative marking calculations.</li>
+            <li><strong>Multi-Format Question Ingestion:</strong> Bulk importers for Excel (.xlsx), CSV, JSON, and Markdown (.md) with integrated validation quarantine to isolate malformed or duplicate questions.</li>
+            <li><strong>Offline Mathematical Typesetting:</strong> Bundled offline KaTeX scripts and fonts capable of rendering complex calculus integrals, matrices, and physics formulas without an internet connection.</li>
+            <li><strong>Data Integrity &amp; Safe Backups:</strong> Point-in-time SQLite database backups with one-click restore functionality.</li>
+          </ul>
+        </section>
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">Technical Implementation</h2>
+          <p>
+            The backend is written in Python using FastAPI and SQLite configured with write-ahead logging (WAL) for high concurrency and resilience:
+          </p>
+          <div class="tech-pills-row" style="margin-bottom: 1.5rem;">
+            <span class="tech-pill">Python 3.10+</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">SQLite (WAL mode)</span>
+            <span class="tech-pill">OpenPyXL</span>
+            <span class="tech-pill">KaTeX Offline</span>
+            <span class="tech-pill">Keyboard Navigation</span>
+          </div>
+          <div class="case-callout-box">
+            <strong>Adaptive Priority Formula:</strong>
+            Priority = 0.35 &times; Weakness + 0.25 &times; Revision Urgency + 0.20 &times; Syllabus Weight + 0.10 &times; Neglect + 0.10 &times; Speed Difficulty.<br>
+            Laplace smoothing is applied to prevent a single accidental wrong answer from wildly skewing a student's review queue.
+          </div>
+        </section>
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">What I Learned</h2>
+          <p>
+            Designing an offline-first learning system reinforced the importance of self-contained software. Eliminating external CDN dependencies, structuring relational schemas with WAL mode, and building a strict import quarantine taught me how to make software that simply works reliably without depending on a remote server.
+          </p>
+        </section>
+
+        <!-- Next Project Footer -->
+        <div class="case-next-footer">
+          <a href="/work/shivshakti-tech/" class="case-next-link">
+            <span class="case-next-label">Next Case Study &rarr;</span>
+            <span class="case-next-title">Shiv Shakti Technical Solution</span>
+          </a>
+          <a href="/work/" class="btn btn-secondary btn-sm">All Projects</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Nirvish Patel &bull; Independent Developer</div>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/work/">Work</a>
+        <a href="/experience/">Experience</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

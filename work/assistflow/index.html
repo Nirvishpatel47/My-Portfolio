@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AssistFlow — Case Study &bull; Nirvish Patel</title>
+  <meta name="description" content="Case study of AssistFlow. An asynchronous RAG-powered customer assistance platform built with FastAPI, Google Gemini, Qdrant vector database, and Google Cloud Run.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('nirvish_theme_preference');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-title">
+        <span class="brand-dot"></span>
+        <span>Nirvish Patel</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/work/" class="nav-link active">Work</a>
+        <a href="/experience/" class="nav-link">Experience</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+          <span class="theme-text">Dark</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰ Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/work/" class="mobile-nav-link active">Work</a>
+    <a href="/experience/" class="mobile-nav-link">Experience</a>
+    <a href="/about/" class="mobile-nav-link">About</a>
+    <a href="/contact/" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- Case Study Hero -->
+    <article class="case-study-hero">
+      <div class="container">
+        <a href="/work/" class="case-breadcrumb">&larr; Back to all work</a>
+        <div style="margin-bottom: 0.75rem;">
+          <span class="badge badge-independent">Independent System &bull; AI &amp; Backend Engineering</span>
+        </div>
+        <h1 class="case-hero-heading">AssistFlow</h1>
+        <p class="case-hero-lead">
+          An asynchronous RAG-powered backend platform and embeddable widget providing cited customer support with automated escalation.
+        </p>
+
+        <!-- Case Metadata Grid -->
+        <div class="case-meta-grid">
+          <div class="case-meta-item">
+            <span class="case-meta-label">Type</span>
+            <span class="case-meta-val">Full-Stack Backend System</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Primary Stack</span>
+            <span class="case-meta-val">Python &bull; FastAPI &bull; Qdrant</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">Deployment</span>
+            <span class="case-meta-val">Docker on Google Cloud Run</span>
+          </div>
+          <div class="case-meta-item">
+            <span class="case-meta-label">AI Models</span>
+            <span class="case-meta-val">Gemini 2.5 Flash Lite &amp; Embeddings</span>
+          </div>
+        </div>
+
+        <div class="case-actions-bar">
+          <a href="https://assistflow-878105927758.asia-south1.run.app" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Live Cloud Run Deployment &rarr;
+          </a>
+          <a href="https://github.com/Nirvishpatel47/AssistFlow" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            GitHub Repository &rarr;
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <div class="container">
+
+      <!-- Visual Display Banner -->
+      <div class="case-visual-banner">
+        <div class="mockup-window">
+          <div class="mockup-header">
+            <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+            <span class="mockup-title">AssistFlow Architecture &bull; Pipeline Overview</span>
+          </div>
+          <div class="mockup-body" style="font-size: 0.88rem; line-height: 1.7;">
+            <div><strong>INGESTION &amp; RETRIEVAL WORKFLOW:</strong></div>
+            <div style="margin: 0.5rem 0 1rem 1rem;">
+              1. <strong>Document Ingestion:</strong> Multi-format parser (PDF, DOCX, code repositories, Excel/CSV) into semantic chunks.<br>
+              2. <strong>Vector Embeddings:</strong> Gemini Embedding 2 (3072 dimensions) indexed in Qdrant with user-scoped isolation.<br>
+              3. <strong>Stateful Conversation:</strong> PostgreSQL state machine tracking intent (Inquiry &rarr; Complaint &rarr; Extraction).<br>
+              4. <strong>Automated Escalation:</strong> Background async tasks trigger email escalations with full context when friction is detected.
+            </div>
+            <div><strong>VERIFIED INFRASTRUCTURE:</strong></div>
+            <div style="margin: 0.5rem 0 0 1rem;">
+              FastAPI 0.112+ &bull; Uvicorn &bull; Qdrant Client 1.18+ &bull; PostgreSQL &bull; Redis Cache &bull; Docker &bull; GCP Cloud Run
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Narrative Sections -->
+      <div class="case-prose-section">
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">The Purpose</h2>
+          <p>
+            Generic AI chat widgets frequently hallucinate answers or invent policies because they lack strict grounding in actual company documentation. When customers experience issues, standard chatbots frustrate them with repetitive loops instead of routing the problem to a human operator.
+          </p>
+          <p>
+            I built AssistFlow to solve this specific challenge: a lightweight, self-hostable customer support backend where all answers are strictly constrained to uploaded company documentation and cited with labeled source references, backed by automated escalation logic for frustrated customers.
+          </p>
+        </section>
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">What I Built</h2>
+          <p>
+            AssistFlow consists of a multi-tenant FastAPI backend, an embeddable JavaScript widget (`widget.js`), and an administrative management API:
+          </p>
+          <ul>
+            <li><strong>Multi-Format Document Parser:</strong> Specialized parsing for PDFs (PyMuPDF), DOCX files, spreadsheets, and over 25 programming languages with brace-aware chunking.</li>
+            <li><strong>Isolated Vector Retrieval:</strong> Vector search via Qdrant utilizing cosine similarity, strictly scoped to each user/tenant ID to prevent cross-account data leaks.</li>
+            <li><strong>Stateful Conversation Engine:</strong> Per-visitor conversation states persisted in PostgreSQL (`NEW` &rarr; `ACTIVE` &rarr; `HANDLING_COMPLAINT` &rarr; `EXTRACTING_CONTACT` &rarr; `ESCALATED`).</li>
+            <li><strong>Automated Escalation Dispatcher:</strong> When a complaint or human request is recognized, the system captures contact information and dispatches a rich email containing the entire conversation transcript to the site administrator.</li>
+            <li><strong>Embeddable Widget:</strong> Single `<script>` tag integration with client token and origin verification to prevent unauthorized domain usage.</li>
+          </ul>
+        </section>
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">Technical Implementation</h2>
+          <p>
+            The system is designed with an async-first architecture to handle concurrent visitor conversations efficiently:
+          </p>
+          <div class="tech-pills-row" style="margin-bottom: 1.5rem;">
+            <span class="tech-pill">Python 3.11+</span>
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">Google Gemini Flash Lite</span>
+            <span class="tech-pill">Gemini Embedding 2</span>
+            <span class="tech-pill">Qdrant Vector DB</span>
+            <span class="tech-pill">SQLAlchemy / PostgreSQL</span>
+            <span class="tech-pill">Redis</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Google Cloud Run</span>
+          </div>
+          <div class="case-callout-box">
+            <strong>Production Fallback &amp; Resilience:</strong> To protect against rate limits, AssistFlow was engineered with automatic LLM fallback routing. When Google Gemini reaches quota limits, requests route to Groq Llama-3.3-70B without disrupting the user session. Document lists are cached in Redis with instant invalidation upon new uploads.
+          </div>
+        </section>
+
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">What I Learned</h2>
+          <p>
+            Building AssistFlow gave me hands-on experience with vector search indexing, semantic chunking boundaries, and the reality of prompt engineering for strict factual grounding. I learned that handling edge cases—such as malformed PDFs, rate limit fallbacks, and multi-turn conversation states—is where the real work in AI engineering happens.
+          </p>
+        </section>
+
+        <!-- Next Project Footer -->
+        <div class="case-next-footer">
+          <a href="/work/ddcet-preparation/" class="case-next-link">
+            <span class="case-next-label">Next Case Study &rarr;</span>
+            <span class="case-next-title">DDCET Preparation</span>
+          </a>
+          <a href="/work/" class="btn btn-secondary btn-sm">All Projects</a>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Nirvish Patel &bull; Independent Developer</div>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/work/">Work</a>
+        <a href="/experience/">Experience</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

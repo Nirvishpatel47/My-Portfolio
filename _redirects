@@ -1,0 +1,10 @@
+# Netlify / Cloudflare Pages clean extensionless routing
+/work                    /work/index.html                    200
+/work/shivshakti-tech    /work/shivshakti-tech/index.html    200
+/work/madefornothing     /work/madefornothing/index.html     200
+/work/assistflow         /work/assistflow/index.html         200
+/work/ddcet-preparation  /work/ddcet-preparation/index.html  200
+/experience              /experience/index.html              200
+/about                   /about/index.html                   200
+/contact                 /contact/index.html                 200
+/*                       /404.html                           404

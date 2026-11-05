@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &mdash; Nirvish Patel</title>
+  <meta name="description" content="Get in touch with Nirvish Patel. Available for independent engineering projects, client collaborations, and technical discussions.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('nirvish_theme_preference');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-title">
+        <span class="brand-dot"></span>
+        <span>Nirvish Patel</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/work/" class="nav-link">Work</a>
+        <a href="/experience/" class="nav-link">Experience</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+          <span class="theme-text">Dark</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰ Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/work/" class="mobile-nav-link">Work</a>
+    <a href="/experience/" class="mobile-nav-link">Experience</a>
+    <a href="/about/" class="mobile-nav-link">About</a>
+    <a href="/contact/" class="mobile-nav-link active">Contact</a>
+  </div>
+
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="contact-layout">
+
+          <!-- Left Column: Channels & Direct Links -->
+          <div>
+            <span class="section-label">Communication</span>
+            <h1 class="hero-heading" style="margin-bottom: 1.25rem;">Have a project in mind?</h1>
+            <p class="contact-lead">
+              Whether you want to build something, discuss an idea or explore working together, feel free to get in touch.
+            </p>
+
+            <div class="contact-methods-stack">
+              <!-- Email -->
+              <div class="contact-channel">
+                <div class="channel-info">
+                  <span class="channel-label">Direct Email</span>
+                  <a href="mailto:nirvishpatel47@gmail.com" class="channel-link">nirvishpatel47@gmail.com</a>
+                </div>
+                <a href="mailto:nirvishpatel47@gmail.com" class="btn btn-secondary btn-sm">Compose &rarr;</a>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-channel">
+                <div class="channel-info">
+                  <span class="channel-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/nirvishpatel47/" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/nirvishpatel47</a>
+                </div>
+                <a href="https://www.linkedin.com/in/nirvishpatel47/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Connect &rarr;</a>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-channel">
+                <div class="channel-info">
+                  <span class="channel-label">GitHub</span>
+                  <a href="https://github.com/nirvishpatel47" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/nirvishpatel47</a>
+                </div>
+                <a href="https://github.com/nirvishpatel47" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Explore &rarr;</a>
+              </div>
+
+              <!-- MadeForNothing -->
+              <div class="contact-channel">
+                <div class="channel-info">
+                  <span class="channel-label">Personal Archive</span>
+                  <a href="https://madefornothing.com/" target="_blank" rel="noopener noreferrer" class="channel-link">madefornothing.com</a>
+                </div>
+                <a href="https://madefornothing.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Visit &rarr;</a>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
+              Location: Gandhinagar, Gujarat, India (IST &bull; UTC+5:30)
+            </div>
+          </div>
+
+          <!-- Right Column: Quick Inquiry Form (Direct Mailto Composer) -->
+          <div class="contact-form-card">
+            <h2 class="contact-form-title">Send a Quick Message</h2>
+            <p class="contact-form-desc">
+              Fill in your details to draft an email directly to my inbox.
+            </p>
+
+            <form id="inquiry-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Jane Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. jane@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" class="form-input" placeholder="e.g. Project inquiry / Web application" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Project Details / Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Describe what you want to build or discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Draft Email to Nirvish &rarr;
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Nirvish Patel &bull; Independent Developer</div>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/work/">Work</a>
+        <a href="/experience/">Experience</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

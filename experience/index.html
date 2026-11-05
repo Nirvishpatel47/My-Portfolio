@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience &mdash; Nirvish Patel</title>
+  <meta name="description" content="Professional history of Nirvish Patel. Independent software development, engineering internships, and automation projects.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('nirvish_theme_preference');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand-title">
+        <span class="brand-dot"></span>
+        <span>Nirvish Patel</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/work/" class="nav-link">Work</a>
+        <a href="/experience/" class="nav-link active">Experience</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+          <span class="theme-icon"></span>
+          <span class="theme-text">Dark</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰ Menu
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="/" class="mobile-nav-link">Home</a>
+    <a href="/work/" class="mobile-nav-link">Work</a>
+    <a href="/experience/" class="mobile-nav-link active">Experience</a>
+    <a href="/about/" class="mobile-nav-link">About</a>
+    <a href="/contact/" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section-padding-sm">
+      <div class="container">
+        <span class="section-label">Chronology</span>
+        <h1 class="hero-heading" style="margin-bottom: 0.75rem;">Professional Experience</h1>
+        <p class="section-desc" style="max-width: 720px;">
+          An honest account of my work history, distinguishing independent creation from focused internships and client automation projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="experience-timeline">
+
+          <!-- Entry 1: MadeForNothing -->
+          <article class="exp-card">
+            <div class="exp-card-header">
+              <div>
+                <h2 class="exp-org-name">MadeForNothing</h2>
+                <div class="exp-role-badge-row">
+                  <span class="exp-role-text">Self-employed &bull; Independent Work</span>
+                  <span class="badge badge-independent">Laboratory</span>
+                </div>
+              </div>
+              <div class="exp-dates">September 2026 – Present</div>
+            </div>
+
+            <div class="exp-meta-pills">
+              <span>Independent Laboratory</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <span>Remote</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <a href="https://madefornothing.com/" target="_blank" rel="noopener noreferrer">madefornothing.com</a>
+            </div>
+
+            <p class="exp-body-text">
+              Independent development focused on building and maintaining MadeForNothing, an evolving digital laboratory for writing, research, software prototypes, projects, and ideas. (This is personal independent work, not a registered corporation).
+            </p>
+            <ul class="exp-bullet-points">
+              <li>Designed and developed an editorial reading experience with responsive typography and dual light/dark themes.</li>
+              <li>Authored long-form essays and conducted independent systems research into computing, craft, and human systems.</li>
+              <li>Maintained zero-dependency static architecture with local mathematical KaTeX rendering.</li>
+            </ul>
+          </article>
+
+          <!-- Entry 2: Kalpataru Projects International Limited -->
+          <article class="exp-card">
+            <div class="exp-card-header">
+              <div>
+                <h2 class="exp-org-name">Kalpataru Projects International Limited</h2>
+                <div class="exp-role-badge-row">
+                  <span class="exp-role-text">Python Developer</span>
+                  <span class="badge badge-intern">Internship (15 Days)</span>
+                </div>
+              </div>
+              <div class="exp-dates">July 2026</div>
+            </div>
+
+            <div class="exp-meta-pills">
+              <span>On-site</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <span>Gandhinagar, Gujarat, India</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <span>Duration: 15 days</span>
+            </div>
+
+            <p class="exp-body-text">
+              Completed a short, 15-day technical internship with the engineering team at Kalpataru Projects International Limited.
+            </p>
+            <ul class="exp-bullet-points">
+              <li>Assisted with internal Python scripting and basic operational utilities.</li>
+              <li>Gained first-hand exposure to corporate engineering standards, version management, and team communication within a large enterprise setting.</li>
+            </ul>
+          </article>
+
+          <!-- Entry 3: SpreadMe Digital Pvt Ltd -->
+          <article class="exp-card">
+            <div class="exp-card-header">
+              <div>
+                <h2 class="exp-org-name">SpreadMe Digital Pvt Ltd</h2>
+                <div class="exp-role-badge-row">
+                  <span class="exp-role-text">Automation Developer</span>
+                  <span class="badge badge-intern">Internship (15 Days)</span>
+                </div>
+              </div>
+              <div class="exp-dates">July 2026</div>
+            </div>
+
+            <div class="exp-meta-pills">
+              <span>Hybrid</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <span>Gandhinagar, Gujarat, India</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <span>Duration: 15 days</span>
+            </div>
+
+            <p class="exp-body-text">
+              Completed a 15-day short technical internship focused on automation and workflow integration.
+            </p>
+            <ul class="exp-bullet-points">
+              <li>Worked on automation scripts and internal workflow tools to streamline digital operations.</li>
+              <li>Explored API integrations and repetitive data handling tasks.</li>
+            </ul>
+          </article>
+
+          <!-- Entry 4: Crevoxega -->
+          <article class="exp-card">
+            <div class="exp-card-header">
+              <div>
+                <h2 class="exp-org-name">Crevoxega</h2>
+                <div class="exp-role-badge-row">
+                  <span class="exp-role-text">Automation Developer</span>
+                  <span class="badge badge-independent">Independent / Self-employed</span>
+                </div>
+              </div>
+              <div class="exp-dates">November 2025 – January 2026</div>
+            </div>
+
+            <div class="exp-meta-pills">
+              <span>Remote</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <span>Gandhinagar, Gujarat</span>
+              <span class="exp-meta-sep">&bull;</span>
+              <a href="https://www.youtube.com/watch?v=NawqfX3og50" target="_blank" rel="noopener noreferrer">Recorded Demo &rarr;</a>
+            </div>
+
+            <p class="exp-body-text">
+              Independent project and client-oriented automation work focused on building a lightweight chatbot widget for small businesses.
+            </p>
+            <ul class="exp-bullet-points">
+              <li>Engineered a conversational widget to help businesses capture incoming visitor inquiries and leads.</li>
+              <li>Integrated lead notifications to deliver prospect contact information directly to business operators.</li>
+              <li>Produced and published a functional demonstration: <a href="https://www.youtube.com/watch?v=NawqfX3og50" target="_blank" rel="noopener noreferrer">YouTube Demonstration</a>.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="section-padding-sm">
+      <div class="container" style="text-align: center;">
+        <h3 style="margin-bottom: 0.75rem;">Interested in collaborating?</h3>
+        <p class="section-desc" style="margin: 0 auto 1.5rem auto;">
+          I am open to independent engineering projects, client engagements, and technical discussions.
+        </p>
+        <a href="/contact/" class="btn btn-primary">Get in touch &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>&copy; 2026 Nirvish Patel &bull; Independent Developer</div>
+      <nav class="footer-nav">
+        <a href="/">Home</a>
+        <a href="/work/">Work</a>
+        <a href="/experience/">Experience</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
