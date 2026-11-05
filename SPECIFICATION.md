@@ -3,6 +3,7 @@
 **Last Updated:** November 2026  
 **Owner:** Nirvish Patel  
 **Links:**
+- Live Website: [https://nirvish.madefornothing.com/](https://nirvish.madefornothing.com/)
 - GitHub: [https://github.com/nirvishpatel47](https://github.com/nirvishpatel47)
 - LinkedIn: [https://www.linkedin.com/in/nirvishpatel47/](https://www.linkedin.com/in/nirvishpatel47/)
 - Personal Project: [https://madefornothing.com/](https://madefornothing.com/)

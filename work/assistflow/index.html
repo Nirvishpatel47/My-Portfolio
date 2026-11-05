@@ -3,10 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AssistFlow — Case Study &bull; Nirvish Patel</title>
-  <meta name="description" content="Case study of AssistFlow. An asynchronous RAG-powered customer assistance platform built with FastAPI, Google Gemini, Qdrant vector database, and Google Cloud Run.">
-  <meta name="robots" content="index, follow">
+  <title>AssistFlow: Architecture &amp; Case Study &mdash; Nirvish Patel</title>
+  <meta name="description" content="Technical case study of AssistFlow, an asynchronous RAG customer support backend built with FastAPI, Google Gemini 2.5, Qdrant vector database, and Google Cloud Run.">
+  <meta name="keywords" content="AssistFlow, RAG architecture, retrieval-augmented generation, FastAPI, Qdrant, Google Gemini, Cloud Run, Nirvish Patel, Python backend, vector search">
+  <meta name="author" content="Nirvish Patel">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nirvish.madefornothing.com/work/assistflow/">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Nirvish Patel">
+  <meta property="og:title" content="AssistFlow: Architecture &amp; Case Study &mdash; Nirvish Patel">
+  <meta property="og:description" content="Technical case study of AssistFlow: Asynchronous RAG customer assistance engine with document intelligence, Qdrant vector retrieval, and automated complaint escalation.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nirvish.madefornothing.com/work/assistflow/">
+  <meta property="og:image" content="https://nirvish.madefornothing.com/assets/images/profile.jpg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AssistFlow: Architecture &amp; Case Study &mdash; Nirvish Patel">
+  <meta name="twitter:description" content="Technical case study of AssistFlow: Asynchronous RAG customer assistance engine with document intelligence, Qdrant vector retrieval, and automated escalation.">
+  <meta name="twitter:image" content="https://nirvish.madefornothing.com/assets/images/profile.jpg">
+
+  <!-- JSON-LD Structured Data for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://nirvish.madefornothing.com/work/assistflow/#article",
+        "headline": "AssistFlow: Asynchronous RAG Customer Support Backend with Document Intelligence",
+        "description": "Technical case study of AssistFlow, an asynchronous RAG customer support engine built with FastAPI, Google Gemini 2.5, Qdrant vector database, and Google Cloud Run.",
+        "author": {
+          "@type": "Person",
+          "name": "Nirvish Patel",
+          "url": "https://nirvish.madefornothing.com/"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Nirvish Patel"
+        },
+        "url": "https://nirvish.madefornothing.com/work/assistflow/",
+        "inLanguage": "en-US",
+        "about": [
+          "Retrieval-Augmented Generation",
+          "FastAPI",
+          "Vector Databases",
+          "Qdrant",
+          "Google Gemini"
+        ]
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "AssistFlow AI",
+        "codeRepository": "https://github.com/Nirvishpatel47/AssistFlow",
+        "programmingLanguage": "Python",
+        "runtimePlatform": "Google Cloud Run, Docker",
+        "author": {
+          "@type": "Person",
+          "name": "Nirvish Patel"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://nirvish.madefornothing.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Work",
+            "item": "https://nirvish.madefornothing.com/work/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AssistFlow",
+            "item": "https://nirvish.madefornothing.com/work/assistflow/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: IBM Plex Sans, Source Serif 4, IBM Plex Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
@@ -76,26 +164,26 @@
         </div>
         <h1 class="case-hero-heading">AssistFlow</h1>
         <p class="case-hero-lead">
-          An asynchronous RAG-powered backend platform and embeddable widget providing cited customer support with automated escalation.
+          An asynchronous, document-grounded customer assistance platform combining multi-format ingestion, tenant-scoped vector search, stateful visitor routing, and automated escalation.
         </p>
 
         <!-- Case Metadata Grid -->
         <div class="case-meta-grid">
           <div class="case-meta-item">
-            <span class="case-meta-label">Type</span>
-            <span class="case-meta-val">Full-Stack Backend System</span>
+            <span class="case-meta-label">System Type</span>
+            <span class="case-meta-val">Multi-Tenant RAG Backend</span>
           </div>
           <div class="case-meta-item">
-            <span class="case-meta-label">Primary Stack</span>
-            <span class="case-meta-val">Python &bull; FastAPI &bull; Qdrant</span>
+            <span class="case-meta-label">Core Engine</span>
+            <span class="case-meta-val">FastAPI &bull; Qdrant &bull; Gemini</span>
           </div>
           <div class="case-meta-item">
             <span class="case-meta-label">Deployment</span>
             <span class="case-meta-val">Docker on Google Cloud Run</span>
           </div>
           <div class="case-meta-item">
-            <span class="case-meta-label">AI Models</span>
-            <span class="case-meta-val">Gemini 2.5 Flash Lite &amp; Embeddings</span>
+            <span class="case-meta-label">Vector Embeddings</span>
+            <span class="case-meta-val">Gemini Embedding 2 (3072d)</span>
           </div>
         </div>
 
@@ -112,24 +200,35 @@
 
     <div class="container">
 
-      <!-- Visual Display Banner -->
+      <!-- Interactive Widget Visual Mockup -->
       <div class="case-visual-banner">
-        <div class="mockup-window">
-          <div class="mockup-header">
-            <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
-            <span class="mockup-title">AssistFlow Architecture &bull; Pipeline Overview</span>
-          </div>
-          <div class="mockup-body" style="font-size: 0.88rem; line-height: 1.7;">
-            <div><strong>INGESTION &amp; RETRIEVAL WORKFLOW:</strong></div>
-            <div style="margin: 0.5rem 0 1rem 1rem;">
-              1. <strong>Document Ingestion:</strong> Multi-format parser (PDF, DOCX, code repositories, Excel/CSV) into semantic chunks.<br>
-              2. <strong>Vector Embeddings:</strong> Gemini Embedding 2 (3072 dimensions) indexed in Qdrant with user-scoped isolation.<br>
-              3. <strong>Stateful Conversation:</strong> PostgreSQL state machine tracking intent (Inquiry &rarr; Complaint &rarr; Extraction).<br>
-              4. <strong>Automated Escalation:</strong> Background async tasks trigger email escalations with full context when friction is detected.
+        <div class="chat-preview-box">
+          <div class="chat-preview-header">
+            <div class="chat-bot-id">
+              <span class="status-indicator-dot"></span>
+              <span>AssistFlow Grounded Assistant</span>
             </div>
-            <div><strong>VERIFIED INFRASTRUCTURE:</strong></div>
-            <div style="margin: 0.5rem 0 0 1rem;">
-              FastAPI 0.112+ &bull; Uvicorn &bull; Qdrant Client 1.18+ &bull; PostgreSQL &bull; Redis Cache &bull; Docker &bull; GCP Cloud Run
+            <span class="chat-state-badge">State: ACTIVE &bull; Cosine Match: 0.91</span>
+          </div>
+
+          <div class="chat-preview-messages">
+            <!-- User message -->
+            <div class="chat-bubble chat-bubble-user">
+              What are the exact hardware and memory requirements to self-host this service on our private cluster?
+            </div>
+
+            <!-- Bot response with source citations -->
+            <div class="chat-bubble chat-bubble-bot">
+              According to the system deployment specification, self-hosting requires:
+              <br><br>
+              &bull; <strong>Memory:</strong> Minimum 2 GB RAM (4 GB recommended for large batch vector embeddings).<br>
+              &bull; <strong>Storage:</strong> Persistent storage volume for PostgreSQL WAL logs and Qdrant vector snapshots.<br>
+              &bull; <strong>Runtime:</strong> Linux container runtime with Python 3.11+ and network egress to Google Cloud APIs.
+              <br>
+              <div class="citation-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                Source: documentation/architecture.pdf &bull; Page 8
+              </div>
             </div>
           </div>
         </div>
@@ -138,59 +237,198 @@
       <!-- Narrative Sections -->
       <div class="case-prose-section">
 
+        <!-- 1. The Core Problem & Purpose -->
         <section class="case-prose-block">
-          <h2 class="case-prose-title">The Purpose</h2>
+          <h2 class="case-prose-title">1. The Problem &amp; Architecture Objective</h2>
           <p>
-            Generic AI chat widgets frequently hallucinate answers or invent policies because they lack strict grounding in actual company documentation. When customers experience issues, standard chatbots frustrate them with repetitive loops instead of routing the problem to a human operator.
+            Standard AI chatbots in business environments face two recurring failures: they fabricate answers when they lack factual knowledge, and they trap frustrated customers in conversational dead-ends when human intervention is necessary.
           </p>
           <p>
-            I built AssistFlow to solve this specific challenge: a lightweight, self-hostable customer support backend where all answers are strictly constrained to uploaded company documentation and cited with labeled source references, backed by automated escalation logic for frustrated customers.
-          </p>
-        </section>
-
-        <section class="case-prose-block">
-          <h2 class="case-prose-title">What I Built</h2>
-          <p>
-            AssistFlow consists of a multi-tenant FastAPI backend, an embeddable JavaScript widget (`widget.js`), and an administrative management API:
+            I engineered AssistFlow to address these exact failures through a strictly grounded, multi-tenant system:
           </p>
           <ul>
-            <li><strong>Multi-Format Document Parser:</strong> Specialized parsing for PDFs (PyMuPDF), DOCX files, spreadsheets, and over 25 programming languages with brace-aware chunking.</li>
-            <li><strong>Isolated Vector Retrieval:</strong> Vector search via Qdrant utilizing cosine similarity, strictly scoped to each user/tenant ID to prevent cross-account data leaks.</li>
-            <li><strong>Stateful Conversation Engine:</strong> Per-visitor conversation states persisted in PostgreSQL (`NEW` &rarr; `ACTIVE` &rarr; `HANDLING_COMPLAINT` &rarr; `EXTRACTING_CONTACT` &rarr; `ESCALATED`).</li>
-            <li><strong>Automated Escalation Dispatcher:</strong> When a complaint or human request is recognized, the system captures contact information and dispatches a rich email containing the entire conversation transcript to the site administrator.</li>
-            <li><strong>Embeddable Widget:</strong> Single `<script>` tag integration with client token and origin verification to prevent unauthorized domain usage.</li>
+            <li><strong>Zero Hallucination Tolerance:</strong> Answers are synthesized strictly from retrieved knowledge chunks stored in a vector database, accompanied by labeled document citations.</li>
+            <li><strong>Intelligent Escalation:</strong> When a user signals dissatisfaction or files a formal complaint, the system captures contact credentials and triggers an asynchronous email to the business owner containing the entire conversation transcript.</li>
+            <li><strong>Strict Tenant Isolation:</strong> Every database query and vector similarity search is filtered by the authenticated <code>user_id</code>, ensuring one client company cannot inspect another's documents.</li>
           </ul>
         </section>
 
+        <!-- 2. System Architecture Flow -->
         <section class="case-prose-block">
-          <h2 class="case-prose-title">Technical Implementation</h2>
+          <h2 class="case-prose-title">2. End-to-End System Pipeline</h2>
           <p>
-            The system is designed with an async-first architecture to handle concurrent visitor conversations efficiently:
+            The platform processes documents and serves real-time inquiries through five decoupled stages:
           </p>
-          <div class="tech-pills-row" style="margin-bottom: 1.5rem;">
-            <span class="tech-pill">Python 3.11+</span>
-            <span class="tech-pill">FastAPI</span>
-            <span class="tech-pill">Google Gemini Flash Lite</span>
-            <span class="tech-pill">Gemini Embedding 2</span>
-            <span class="tech-pill">Qdrant Vector DB</span>
-            <span class="tech-pill">SQLAlchemy / PostgreSQL</span>
-            <span class="tech-pill">Redis</span>
-            <span class="tech-pill">Docker</span>
-            <span class="tech-pill">Google Cloud Run</span>
+
+          <div class="flow-steps-grid">
+            <div class="flow-step-card">
+              <div class="flow-step-num">Step 01</div>
+              <h3 class="flow-step-title">Ingestion &amp; Parsing</h3>
+              <p class="flow-step-desc">
+                PyMuPDF for PDFs, python-docx for documents, openpyxl for spreadsheets, and custom brace-aware chunkers for 25+ code languages.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-step-num">Step 02</div>
+              <h3 class="flow-step-title">Vector Indexing</h3>
+              <p class="flow-step-desc">
+                Gemini Embedding 2 maps content into 3072-dimensional vectors stored in Qdrant with payload indexes on <code>user_id</code> and <code>document_id</code>.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-step-num">Step 03</div>
+              <h3 class="flow-step-title">Hybrid Orchestration</h3>
+              <p class="flow-step-desc">
+                Primary queries route to Gemini 2.5 Flash Lite. If quota or rate limits occur, requests failover automatically to Groq Llama-3.3-70B.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-step-num">Step 04</div>
+              <h3 class="flow-step-title">State Machine FSM</h3>
+              <p class="flow-step-desc">
+                Visitor state transitions in PostgreSQL: <code>NEW</code> &rarr; <code>ACTIVE</code> &rarr; <code>HANDLING_COMPLAINT</code> &rarr; <code>ESCALATED</code>.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-step-num">Step 05</div>
+              <h3 class="flow-step-title">Widget Integration</h3>
+              <p class="flow-step-desc">
+                Zero-dependency embed script validating client tokens against allowed domain origins to prevent unauthorized site embedding.
+              </p>
+            </div>
           </div>
+        </section>
+
+        <!-- 3. Deep Dive: Document Intelligence & Chunking -->
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">3. Document Intelligence &amp; Semantic Chunking</h2>
+          <p>
+            Fixed-length naive chunking splits sentences arbitrarily, causing broken context in vector search. AssistFlow implements two specialized chunking approaches:
+          </p>
+          <ul>
+            <li><strong>Dependency-Free Semantic Chunking for Prose:</strong> Detects natural paragraph and topical boundaries, preserving complete thoughts within the vector payload.</li>
+            <li><strong>Brace-Aware AST Chunking for Codebases:</strong> When companies upload software repositories, functions, classes, and structs are kept intact as unified chunks, allowing the LLM to understand entire algorithms rather than fragmented syntax.</li>
+            <li><strong>CPU-Bound Asynchronous Offloading:</strong> File parsing is dispatched via Python's <code>run_in_executor</code> to avoid blocking FastAPI's asynchronous event loop during heavy document ingestion.</li>
+          </ul>
+        </section>
+
+        <!-- 4. Deep Dive: Tenant Isolation & Vector Search -->
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">4. Strict Multi-Tenant Vector Partitioning</h2>
+          <p>
+            Multi-tenancy requires ironclad separation. In Qdrant, every vector upsert and search query includes a payload filter matching the authenticated <code>user_id</code>:
+          </p>
           <div class="case-callout-box">
-            <strong>Production Fallback &amp; Resilience:</strong> To protect against rate limits, AssistFlow was engineered with automatic LLM fallback routing. When Google Gemini reaches quota limits, requests route to Groq Llama-3.3-70B without disrupting the user session. Document lists are cached in Redis with instant invalidation upon new uploads.
+            <strong>Security Boundary:</strong> Even if two tenants upload identical document names, Qdrant payload filters enforce strict isolation at the indexing layer. PostgreSQL enforces foreign keys matching tenant identities, and passwords are encrypted using modern Argon2 hashing.
           </div>
-        </section>
-
-        <section class="case-prose-block">
-          <h2 class="case-prose-title">What I Learned</h2>
           <p>
-            Building AssistFlow gave me hands-on experience with vector search indexing, semantic chunking boundaries, and the reality of prompt engineering for strict factual grounding. I learned that handling edge cases—such as malformed PDFs, rate limit fallbacks, and multi-turn conversation states—is where the real work in AI engineering happens.
+            Document list queries and metadata are cached in Redis with a 600-second TTL and immediate cache invalidation upon any upload or deletion event.
           </p>
         </section>
 
-        <!-- Next Project Footer -->
+        <!-- 5. Deep Dive: Embeddable Widget & Domain Whitelisting -->
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">5. Embeddable JavaScript Widget &amp; Security</h2>
+          <p>
+            Businesses embed AssistFlow on any website with a single snippet tag:
+          </p>
+
+          <pre class="code-snippet-box"><code>&lt;!-- AssistFlow Embeddable Customer Support Widget --&gt;
+&lt;script 
+  src="https://assistflow-878105927758.asia-south1.run.app/widget.js" 
+  data-client-token="550e8400-e29b-41d4-a716-446655440000"&gt;
+&lt;/script&gt;</code></pre>
+
+          <p>
+            The backend validates incoming HTTP <code>Origin</code> and <code>Referer</code> headers against the tenant's configured <code>allowed_url</code> list, preventing token theft and malicious third-party embeds.
+          </p>
+        </section>
+
+        <!-- 6. Technical Specifications Table -->
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">6. Verified Technology Specifications</h2>
+          <p>
+            The full production stack verified in the AssistFlow source repository:
+          </p>
+
+          <div class="spec-table-wrapper">
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Technology</th>
+                  <th>Architectural Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="spec-table-key">Web Framework</td>
+                  <td>FastAPI 0.112+</td>
+                  <td>Asynchronous REST API &amp; WebSocket endpoint routing</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Vector Database</td>
+                  <td>Qdrant (Cosine Similarity)</td>
+                  <td>User-scoped semantic chunk search &amp; payload indexing</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Primary LLM</td>
+                  <td>Google Gemini 2.5 Flash Lite</td>
+                  <td>Grounded response generation with source citations</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Fallback LLM</td>
+                  <td>Groq Llama-3.3-70B</td>
+                  <td>High-speed fallback triggered during rate limits / quota exhaustion</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Embedding Model</td>
+                  <td>Gemini Embedding 2</td>
+                  <td>3072-dimensional dense semantic vector representations</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Relational Database</td>
+                  <td>PostgreSQL (SQLAlchemy)</td>
+                  <td>Multi-tenant credentials, visitor state machine &amp; chat history</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Caching &amp; Limits</td>
+                  <td>Redis &amp; FastAPI Limiter</td>
+                  <td>Metadata caching (600s TTL) and rate limiting on sensitive APIs</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">File Ingestion</td>
+                  <td>PyMuPDF, docx, openpyxl</td>
+                  <td>Parsing PDFs, Word docs, spreadsheets &amp; 25+ programming languages</td>
+                </tr>
+                <tr>
+                  <td class="spec-table-key">Container &amp; Cloud</td>
+                  <td>Docker on GCP Cloud Run</td>
+                  <td>Stateless container auto-scaling in the <code>asia-south1</code> region</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 7. What I Learned -->
+        <section class="case-prose-block">
+          <h2 class="case-prose-title">7. Engineering Lessons &amp; Insights</h2>
+          <p>
+            Building AssistFlow as a complete backend from scratch provided valuable technical lessons:
+          </p>
+          <ul>
+            <li><strong>RAG is 80% Ingestion &amp; Chunking:</strong> The quality of an AI answer depends entirely on the cleanliness of the extracted chunks. Investing in brace-aware parsing and semantic delimiters yielded significantly higher retrieval accuracy than tuning prompts.</li>
+            <li><strong>Stateful Conversation Machines are Essential:</strong> A naive chat endpoint that treats every turn independently fails when a visitor switches from inquiring about pricing to filing a grievance. Explicit FSM states allowed predictable escalation workflows.</li>
+            <li><strong>Graceful Fallbacks Prevent Downtime:</strong> Cloud AI APIs encounter transient 429 quota spikes. Implementing an automatic secondary LLM fallback made the service resilient under sustained traffic.</li>
+          </ul>
+        </section>
+
+        <!-- Navigation Footer -->
         <div class="case-next-footer">
           <a href="/work/ddcet-preparation/" class="case-next-link">
             <span class="case-next-label">Next Case Study &rarr;</span>
@@ -204,10 +442,11 @@
     </div>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>&copy; 2026 Nirvish Patel &bull; Independent Developer</div>
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="Footer Navigation">
         <a href="/">Home</a>
         <a href="/work/">Work</a>
         <a href="/experience/">Experience</a>

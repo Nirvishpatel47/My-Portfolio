@@ -1,0 +1,5 @@
+# robots.txt for https://nirvish.madefornothing.com
+User-agent: *
+Allow: /
+
+Sitemap: https://nirvish.madefornothing.com/sitemap.xml
