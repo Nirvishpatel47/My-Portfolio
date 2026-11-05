@@ -149,19 +149,48 @@
   });
 
   // =========================================================================
-  // Contact Form Helper (Direct Mailto with Subject & Body)
+  // Copy Email to Clipboard
   // =========================================================================
-  const contactForm = document.getElementById('inquiry-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('form-name')?.value || 'Inquirer';
-      const email = document.getElementById('form-email')?.value || '';
-      const subject = document.getElementById('form-subject')?.value || 'Project Inquiry';
-      const message = document.getElementById('form-message')?.value || '';
+  const copyEmailBtn = document.getElementById('copy-email-btn');
+  if (copyEmailBtn) {
+    const feedbackEl = copyEmailBtn.querySelector('.copy-text') || copyEmailBtn;
+    const defaultText = feedbackEl.textContent || 'Copy Email';
+    let timeoutId = null;
 
-      const mailtoUrl = `mailto:nirvishpatel47@gmail.com?subject=${encodeURIComponent(subject + ' - ' + name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\nMessage:\n' + message)}`;
-      window.location.href = mailtoUrl;
+    function showFeedback() {
+      copyEmailBtn.classList.add('copied');
+      feedbackEl.textContent = 'Copied!';
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        copyEmailBtn.classList.remove('copied');
+        feedbackEl.textContent = defaultText;
+      }, 2000);
+    }
+
+    function fallbackCopy(text) {
+      const tempArea = document.createElement('textarea');
+      tempArea.value = text;
+      tempArea.style.position = 'fixed';
+      tempArea.style.opacity = '0';
+      document.body.appendChild(tempArea);
+      tempArea.focus();
+      tempArea.select();
+      try {
+        document.execCommand('copy');
+        showFeedback();
+      } catch (err) {}
+      document.body.removeChild(tempArea);
+    }
+
+    copyEmailBtn.addEventListener('click', function () {
+      const email = copyEmailBtn.getAttribute('data-email') || 'nirvishpatel47@gmail.com';
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email)
+          .then(showFeedback)
+          .catch(() => fallbackCopy(email));
+      } else {
+        fallbackCopy(email);
+      }
     });
   }
 

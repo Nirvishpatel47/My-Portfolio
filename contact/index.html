@@ -70,91 +70,91 @@
     <section class="section-padding">
       <div class="container">
         
-        <div class="contact-layout">
+        <div class="contact-page-wrapper">
 
-          <!-- Left Column: Channels & Direct Links -->
-          <div>
+          <!-- Header -->
+          <div class="contact-header">
             <span class="section-label">Communication</span>
-            <h1 class="hero-heading" style="margin-bottom: 1.25rem;">Have a project in mind?</h1>
+            <h1 class="hero-heading contact-heading">Get in touch.</h1>
             <p class="contact-lead">
-              Whether you want to build something, discuss an idea or explore working together, feel free to get in touch.
+              Whether you want to discuss a project, explore working together, or simply reach out, feel free to contact me through any of the channels below.
             </p>
+          </div>
 
-            <div class="contact-methods-stack">
-              <!-- Email -->
-              <div class="contact-channel">
-                <div class="channel-info">
-                  <span class="channel-label">Direct Email</span>
-                  <a href="mailto:nirvishpatel47@gmail.com" class="channel-link">nirvishpatel47@gmail.com</a>
-                </div>
-                <a href="mailto:nirvishpatel47@gmail.com" class="btn btn-secondary btn-sm">Compose &rarr;</a>
-              </div>
-
-              <!-- LinkedIn -->
-              <div class="contact-channel">
-                <div class="channel-info">
-                  <span class="channel-label">LinkedIn</span>
-                  <a href="https://www.linkedin.com/in/nirvishpatel47/" target="_blank" rel="noopener noreferrer" class="channel-link">linkedin.com/in/nirvishpatel47</a>
-                </div>
-                <a href="https://www.linkedin.com/in/nirvishpatel47/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Connect &rarr;</a>
-              </div>
-
-              <!-- GitHub -->
-              <div class="contact-channel">
-                <div class="channel-info">
-                  <span class="channel-label">GitHub</span>
-                  <a href="https://github.com/nirvishpatel47" target="_blank" rel="noopener noreferrer" class="channel-link">github.com/nirvishpatel47</a>
-                </div>
-                <a href="https://github.com/nirvishpatel47" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Explore &rarr;</a>
-              </div>
-
-              <!-- MadeForNothing -->
-              <div class="contact-channel">
-                <div class="channel-info">
-                  <span class="channel-label">Personal Archive</span>
-                  <a href="https://madefornothing.com/" target="_blank" rel="noopener noreferrer" class="channel-link">madefornothing.com</a>
-                </div>
-                <a href="https://madefornothing.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Visit &rarr;</a>
+          <!-- Primary Contact: Email Card -->
+          <div class="contact-primary-card">
+            <span class="contact-card-label">Primary Contact &bull; Direct Email</span>
+            
+            <div class="contact-email-display">
+              <a href="mailto:nirvishpatel47@gmail.com" class="contact-email-link" title="Send email to nirvishpatel47@gmail.com">
+                nirvishpatel47@gmail.com
+              </a>
+              
+              <div class="contact-email-actions">
+                <a href="mailto:nirvishpatel47@gmail.com" class="btn btn-primary btn-sm">
+                  Compose Email &rarr;
+                </a>
+                
+                <button id="copy-email-btn" class="copy-email-btn" type="button" data-email="nirvishpatel47@gmail.com" aria-label="Copy email address to clipboard">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span class="copy-text">Copy Email</span>
+                </button>
               </div>
             </div>
 
-            <div style="margin-top: 2rem; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">
-              Location: Gandhinagar, Gujarat, India (IST &bull; UTC+5:30)
+            <div class="contact-primary-note">
+              Direct inbox. I read every message and aim to respond promptly to genuine inquiries.
             </div>
           </div>
 
-          <!-- Right Column: Quick Inquiry Form (Direct Mailto Composer) -->
-          <div class="contact-form-card">
-            <h2 class="contact-form-title">Send a Quick Message</h2>
-            <p class="contact-form-desc">
-              Fill in your details to draft an email directly to my inbox.
-            </p>
-
-            <form id="inquiry-form">
-              <div class="form-group">
-                <label for="form-name" class="form-label">Your Name</label>
-                <input type="text" id="form-name" class="form-input" placeholder="e.g. Jane Doe" required>
+          <!-- Secondary Channels Grid -->
+          <div class="contact-secondary-grid">
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/nirvishpatel47/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+              <div class="channel-card-top">
+                <span class="channel-card-platform">LinkedIn</span>
+                <span class="channel-card-arrow">&nearr;</span>
               </div>
-
-              <div class="form-group">
-                <label for="form-email" class="form-label">Your Email</label>
-                <input type="email" id="form-email" class="form-input" placeholder="e.g. jane@example.com" required>
+              <div>
+                <div class="channel-card-handle">in/nirvishpatel47</div>
+                <div class="channel-card-desc">Professional background &amp; network</div>
               </div>
+            </a>
 
-              <div class="form-group">
-                <label for="form-subject" class="form-label">Subject</label>
-                <input type="text" id="form-subject" class="form-input" placeholder="e.g. Project inquiry / Web application" required>
+            <!-- GitHub -->
+            <a href="https://github.com/nirvishpatel47" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+              <div class="channel-card-top">
+                <span class="channel-card-platform">GitHub</span>
+                <span class="channel-card-arrow">&nearr;</span>
               </div>
-
-              <div class="form-group">
-                <label for="form-message" class="form-label">Project Details / Message</label>
-                <textarea id="form-message" class="form-textarea" placeholder="Describe what you want to build or discuss..." required></textarea>
+              <div>
+                <div class="channel-card-handle">nirvishpatel47</div>
+                <div class="channel-card-desc">Repositories, code &amp; open source</div>
               </div>
+            </a>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                Draft Email to Nirvish &rarr;
-              </button>
-            </form>
+            <!-- MadeForNothing -->
+            <a href="https://madefornothing.com/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+              <div class="channel-card-top">
+                <span class="channel-card-platform">Personal Archive</span>
+                <span class="channel-card-arrow">&nearr;</span>
+              </div>
+              <div>
+                <div class="channel-card-handle">madefornothing.com</div>
+                <div class="channel-card-desc">Essays, research &amp; digital lab</div>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Location & Availability Meta Bar -->
+          <div class="contact-meta-bar">
+            <span>Location: Gandhinagar, Gujarat, India (IST &bull; UTC+5:30)</span>
+            <span>Open to independent projects &amp; collaborations</span>
           </div>
 
         </div>
@@ -163,10 +163,11 @@
     </section>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>&copy; 2026 Nirvish Patel &bull; Independent Developer</div>
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="Footer Navigation">
         <a href="/">Home</a>
         <a href="/work/">Work</a>
         <a href="/experience/">Experience</a>
